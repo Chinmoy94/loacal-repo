@@ -1,6 +1,6 @@
 //primitive 
 //7 types :string,Number,boolearn,null,undefined,symbol,bigint
-const score= 100
+/*const score= 100
 const scoreValue=100.3
 const isLoggin=false
 const outsideTemp=null
@@ -25,7 +25,7 @@ console.log(typeof myFunction);
 console.log(typeof bigNumber);
 // stack and heap
 //stack -primitive , heap-non primitive
-let myName="chinmoy";
+/*let myName="chinmoy";
 let anotherName=myName;
 anotherName="aarush";
 console.log(myName);
@@ -40,7 +40,7 @@ console.log(userOne.email);
 console.log(userTwo.email);
 //String
 //String interpolation
-const name="chinmoy"
+/*const name="chinmoy"
 const repoCount =50
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 const gameName=new String("pubg");
@@ -59,7 +59,7 @@ const url ="https://chinmoymanna.com 40%"
 console.log(url.replace('40%',))
 console.log(name.split('-'));
 //number and maths
-const score1 = 400
+/*const score1 = 400
 console.log(score);
 const balance =new Number(500)
 console.log(balance);
@@ -72,7 +72,7 @@ console.log(hunderds.toLocaleString('en-IN'));
 /*console.log(Math);
 console.log(Math.abs(-4));
 console.log(Math.round(4.5));*/
-console.log((Math.random()*10)+1);
+/*console.log((Math.random()*10)+1);
 const min = 10
 const max =20
 console.log(Math.floor(Math.random()*(max-min +1)+min));
@@ -82,7 +82,7 @@ console.log(myDate.toISOString());
 console.log(typeof myDate);
 //let myCreateDate = new Date(2025, 0,23)
 //console.log(myCreateDate.toDateString());
-let myCreateDate = new Date("12-28-2024")
+/*let myCreateDate = new Date("12-28-2024")
 console.log(Math.floor(Date.now()/1000));
 let newDate = newDate("12-25-2024")
 console.log(newDate.getMonth()+1);
@@ -98,4 +98,58 @@ console.log(factorial(n));
 const fibonacci =(n) =>(n <=2 ?1 : fibonacci(n-1) + fibonacci(n-2));
 console.log(fibonacci(10));*/
 //Arrays
-const myArr =[0,1,2,3,4,5] 
+const marvel_heros =["ironman","spiderman","captain america"]
+const dc_heros =["batman","superman","flash"]
+
+const avengers=[...marvel_heros,...dc_heros]
+console.log(avengers);
+const another_arrray=[1,2,3,[4,5,6],7,[6,8,9]]
+const realNumber=another_arrray.flat(Infinity)
+console.log(realNumber);
+console.log(Array.isArray("chinmoy"))
+console.log(Array.from({name:"chinmoy"}))
+
+let score1 =100
+let score2= 200
+let score3 =300
+console.log(Array.of(score1,score2,score3))
+// sinleton
+//object literal
+//object 
+/*const mySym = Symbol("key1")
+const jsUser ={
+      name:"chinmoy",
+      fullName:"chinmoy Manna",
+      email:"chinmoym66@gmail.com",
+      age:30,
+      location:"kolkata",
+      isLoggin:false,
+      [mySym]:"mykey1",
+
+}
+/*console.log(typeof jsUser[mySym]);
+jsUser.email = "chinmoym888@gamil.com"
+Object.freeze(jsUser)
+console.log(jsUser);*/
+function myFirstFunction(){
+    console.log("hello");
+    console.log("world");
+}
+myFirstFunction();
+function isEvenOrOdd(x){
+    if(x%2===0){
+        console.log("even");
+    }else{
+        console.log("odd");
+    }
+}
+isEvenOrOdd(7);
+function addFourNumbers(a,b,c,d){
+    let result = a+b+c+d;
+   // console.log(result);
+   return result;
+}
+let x=addFourNumbers(1,2,3,4);
+let y=addFourNumbers(5,6,7,8);
+console.log(x+y);
+console.log(x*y);
