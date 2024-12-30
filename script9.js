@@ -153,3 +153,66 @@ let x=addFourNumbers(1,2,3,4);
 let y=addFourNumbers(5,6,7,8);
 console.log(x+y);
 console.log(x*y);
+const course = {
+    coursename:"javascript",
+    price:"900",
+    courseInstuctor:"chinmoy",
+}
+const{courseInstuctor:inst}=course
+console.log(inst);
+function addName(){
+    console.log("chinmoy");
+    console.log("aarush");
+}
+addName()
+function addTwoNumbers(number1,number2){
+   // console.log(number1 + number2);
+}
+addTwoNumbers(10,47);
+function loginUserMessage(username ="don")
+{
+    if(username === undefined){
+        console.log("please enter a username");
+        return
+    }
+    return `${username} just logged in`
+}
+//console.log(loginUserMessage("chinmoy"))
+console.log(loginUserMessage("heru"))
+function calculatePrice(val1,val2,...num1){
+    return num1
+}
+console.log(calculatePrice(100,500,788,900))
+/*const user ={
+    username:"sudipa",
+    price:899
+}*/
+function handleObject(anyobject){
+    console.log(`the username is ${anyobject.username} and the price is ${anyobject.price}`);
+}
+//handleObject(user)
+handleObject({
+    username: "sudipa",
+    price:900
+})
+const myNewArray=[677,88,654]
+function newFunction(hero){
+    return hero[2]
+}
+console.log(newFunction([455,788,900,654]));
+let a =23
+if(true){
+    let a=45
+    const b=56
+    console.log("don:", a);
+}
+function one(){
+    const website ="www.google.com"
+    const name ="dental"
+    function two(){
+        const email ="chinmoym66@gmail.com"
+        console.log(website);
+    }
+    two()
+}
+one()
