@@ -216,3 +216,56 @@ function one(){
     two()
 }
 one()
+// Descending order from 25 to 1
+let i = 25;
+while (i >= 1) {
+    console.log(i);
+    i--;
+}
+for(let i=10; i<=20; i++){
+    console.log(i);
+}
+const num1 =23;
+const num2 = 50;
+for(let i=num1+1; i<=num2; i++){
+    console.log(i);
+}
+let result = [1, 2, 3];
+let newLength = result.push(4, 5, 6);  // Adds 4, 5, and 6 to the end of the array
+console.log(result);  // [1, 2, 3, 4, 5, 6]
+console.log(newLength);  // 6 (new length of the array)
+let result1 =[7,8,9];
+let newR = result1.push(10,11);
+console.log(newR);
+console.log(result1);
+//classes
+class Product{
+     constructor(n,p){
+            console.log("The new product of 2025 in Amazon");
+            
+            this.name=n;
+            this.price=p;
+     }
+     display(){
+        console.log(`The new year sale of ${ 2025} is ${Mobile} `);
+     }
+    }
+ const product1 = new Product("iphone",60000);
+
+ const product2 = new Product("samsung",78880);
+console.log(product1,product2);
+const numA = 10;
+const numB = 25;
+//for(let i=numA+1; i<=numB; i++){
+    console.log(i);
+//}
+let loop =1;
+while (loop<=24) {
+    loop++;
+    console.log(loop);
+}
+let i2 = 24;
+while(i2>=1){
+    console.log(i2);
+    i2=i2-1;
+}
